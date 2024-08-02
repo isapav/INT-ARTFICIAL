@@ -60,4 +60,27 @@ function mostraAlternativas() {
     }
   }
 
-  
+  function aleatorio (lista){
+        const posicao = Math.floor(Math.random()* lista.length);
+        return lista[posicao];
+}
+function respostaSelecionada(opcaoSelecionada){
+        const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+        historiaFinal += afirmacoes + " ";
+        atual++;
+        mostraPergunta();
+}
+export const perguntas = [
+// Trecho de código suprimido
+]
+export function aleatorio (lista){
+// Trecho de código suprimido
+}
+import {aleatorio} from './aleatorio.js';
+import {perguntas} from './perguntas.js';
+
+<!-- Trecho de código suprimido -->
+
+<script type="module" src="js/aleatorio.js"></script>
+<script type="module" src="js/perguntas.js"></script>
+<script type="module" src="js/script.js"></script>
